@@ -11,14 +11,14 @@ test('class "ErrorRepository" has the "errors" property with Map object', () => 
 
 ErrorRepository.errors.set(1, 'Описание ошибки с кодом 1');
 
-test('class "ErrorRepository" has a working "translate" method', () => {
-  expect(typeof ErrorRepository.translate).toBe('function');
+test('class "ErrorRepository" throw errors', () => {
+  expect(typeof ErrorRepository).toBe('function');
 
-  let output = ErrorRepository.translate(1);
+  let output = ErrorRepository(1);
 
   expect(output).toBe('Описание ошибки с кодом 1');
 
-  output = ErrorRepository.translate(2);
+  output = ErrorRepository(2);
 
   expect(output).toBe('Unknown error');
 });
