@@ -8,3 +8,5 @@
 Реализуйте метод translate(code), позволяющий по коду получить текст ошибки, а в случае отсутствия подобного кода возвращать строку 'Unknown error'.
 
 Не забудьте написать unit-тесты, которые обеспечивают 100% покрытие функций и классов, которые вы тестируете.
+
+[![Build status](https://ci.appveyor.com/api/projects/status/fgtdh9i2koj509gi/branch/main?svg=true)](https://ci.appveyor.com/project/IPL1987/ajs-map/branch/main)
