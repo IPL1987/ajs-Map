@@ -10,10 +10,6 @@ export default class ErrorRepository {
     this.errors.set(504, 'Gateway Timeout');
   }
 
-  add(number, string) {
-    this.errors.set(number, string);
-  }
-
   translate(code) {
     if (!this.errors.has(code)) {
       return 'Unknown error';
